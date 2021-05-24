@@ -1,0 +1,104 @@
+.footer {
+  background-color: #2f303a;
+
+  &__container {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__socials-container {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1, 14;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__signup-container {
+    padding-top: 12px;
+    margin-left: auto;
+  }
+
+  &__signup-form {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--accent-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+
+  &__button-icon {
+    margin-left: 10px;
+  }
+}
+
+.footer__email-form {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1, 25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+/* Footer address */
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &--contact {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.address__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}

@@ -1,0 +1,31 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    max-width: 270px;
+  }
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-cl);
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--second-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
