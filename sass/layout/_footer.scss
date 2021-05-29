@@ -1,15 +1,39 @@
 .footer {
   background-color: #2f303a;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &__container {
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__socials-container {
-    margin-left: 70px;
-    padding-top: 12px;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      margin-left: 165px;
+      padding-top: 5px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-top: 0;
+      padding-top: 12px;
+    }
   }
 
   &__title {
@@ -22,12 +46,24 @@
   }
 
   &__signup-container {
-    padding-top: 12px;
-    margin-left: auto;
+    margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      margin-top: 0;
+      padding-top: 12px;
+    }
   }
 
   &__signup-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__button {
@@ -35,6 +71,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin-top: 20px;
     min-width: 200px;
     min-height: 50px;
     background-color: var(--accent-cl);
@@ -42,6 +79,10 @@
     border-radius: 4px;
     border: none;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
   }
 
   &__button-text {
@@ -57,17 +98,39 @@
   }
 }
 
+.footer__small-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
 .footer__email-form {
-  width: 358px;
+  min-width: 290px;
   height: 50px;
   padding: 15px 0 15px 16px;
-  margin-right: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
   color: #fff;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -86,7 +149,11 @@
   color: #ffffff;
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
   &--contact {
     color: rgba(255, 255, 255, 0.6);

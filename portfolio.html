@@ -16,55 +16,154 @@
       integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/> 
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
-        <a href="" id="home" class="logo logo--header link"
-          ><span class="logo__word">Web</span>Studio</a
-        >
-        <nav>
-          <ul class="list header-nav">
-            <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link link">Студия</a>
-            </li>
-            <li class="header-nav__item">
+        <div class="small-menu">
+          <div class="logo__container">
+            <a href="" class="logo logo--header link"
+              ><span class="logo__word">Web</span>Studio</a
+            >
+          </div>
+          <button
+            class="small-menu__btn"
+            type="button"
+            data-menu-button
+            aria-controls="menu-container"
+            aria-expanded="false"
+          >
+            <svg
+              class="small-menu__burger"
+              width="24"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z"
+              />
+            </svg>
+            <svg
+              class="small-menu__close"
+              width="19"
+              height="19"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.667 1.88L16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z"
+              />
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <nav>
+              <ul class="list header-nav">
+                <li class="header-nav__item">
+                  <a href="./index.html" class="header-nav__link link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="header-nav__item">
+                  <a
+                    href="./portfolio.html"
+                    class="header-nav__link link header-nav__link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list header-auth">
+              <li class="header-auth__item">
+                <a
+                  href="tel:+380961111111"
+                  class="header-auth__link link header-auth__link--mobile"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-auth__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-auth__link link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list header-socials">
+              <li class="header-socials__item">
+                <a class="link header-socials__link" href="">Instagram</a>
+              </li>
+              <li class="header-socials__item">
+                <a class="link header-socials__link" href="">Twitter</a>
+              </li>
+              <li class="header-socials__item">
+                <a class="link header-socials__link" href="">Facebook</a>
+              </li>
+              <li class="header-socials__item">
+                <a class="link header-socials__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="big-menu">
+          <a href="" id="home" class="logo logo--header link"
+            ><span class="logo__word">Web</span>Studio</a
+          >
+          <nav>
+            <ul class="list header-nav">
+              <li class="header-nav__item">
+                <a href="./index.html" class="header-nav__link link">Студия</a>
+              </li>
+              <li class="header-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="header-nav__link link header-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list header-auth">
+            <li class="header-auth__item">
               <a
-                href="./portfolio.html"
-                class="header-nav__link link header-nav__link--current"
-                >Портфолио</a
+                href="mailto:info@devstudio.com"
+                class="header-auth__link link"
+              >
+                <svg class="header-auth__icon" width="16" height="12">
+                  <use
+                    href="./images/icons/icomoon/sprite.svg#icon-envelope"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link link">Контакты</a>
+            <li class="header-auth__item">
+              <a href="tel:+380961111111" class="header-auth__link link">
+                <svg
+                  class="header-auth__icon header-auth__icon--tel"
+                  width="10"
+                  height="16"
+                >
+                  <use
+                    href="./images/icons/icomoon/sprite.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="list header-auth">
-          <li class="header-auth__item">
-            <a href="mailto:info@devstudio.com" class="header-auth__link link">
-              <svg class="header-auth__icon" width="16" height="12">
-                <use
-                  href="./images/icons/icomoon/sprite.svg#icon-envelope"
-                ></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-auth__item">
-            <a href="tel:+380961111111" class="header-auth__link link">
-              <svg class="header-auth__icon" width="10" height="16">
-                <use
-                  href="./images/icons/icomoon/sprite.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="section">
@@ -92,12 +191,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img1.jpg"
-                    alt="Сайт Технокряк"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio1.jpg 1x,
+                        ./images/desktop/portfolio/portfolio1@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio1@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio1.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio1@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio1.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio1@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio1.jpg"
+                      alt="Сайт Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -117,12 +239,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img2.jpg"
-                    alt="Дизайн постера New Orlean vs Golden Star"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio2.jpg 1x,
+                        ./images/desktop/portfolio/portfolio2@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio2@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio2.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio2@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio2.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio2@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -143,12 +288,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img3.jpg"
-                    alt="Приложение ресторана Seafood"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio3.jpg 1x,
+                        ./images/desktop/portfolio/portfolio3@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio3@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio3.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio3@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio3.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio3@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio3.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -167,12 +335,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img4.jpg"
-                    alt="Иллюстрация к проекту Prime"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio4.jpg 1x,
+                        ./images/desktop/portfolio/portfolio4@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio4@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio4.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio4@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio4.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio4@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio4.jpg"
+                      alt="Проект Prime"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -191,12 +382,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img5.jpg"
-                    alt="Приложение проекта Boxes"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio5.jpg 1x,
+                        ./images/desktop/portfolio/portfolio5@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio5@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio5.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio5@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio5.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio5@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio5.jpg"
+                      alt="Проект Boxes"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -215,12 +429,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img6.jpg"
-                    alt="Сайт Inspiration has no Borders"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio6.jpg 1x,
+                        ./images/desktop/portfolio/portfolio6@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio6@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio6.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio6@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio6.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio6@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio6.jpg"
+                      alt="Inspiration has no Border"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -239,12 +476,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img7.jpg"
-                    alt="Дизайн издания Limited Edition"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio7.jpg 1x,
+                        ./images/desktop/portfolio/portfolio7@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio7@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio7.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio7@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio7.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio7@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio7.jpg"
+                      alt="Издание Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -263,12 +523,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img8.jpg"
-                    alt="Иллюстрация к проекту LAB"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio8.jpg 1x,
+                        ./images/desktop/portfolio/portfolio8@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio8@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio8.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio8@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio8.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio8@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio8.jpg"
+                      alt="Проект LAB"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -287,12 +570,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link link" href="">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img9.jpg"
-                    alt="Приложение Growing Business"
-                    width="370"
-                    height="290"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/portfolio/portfolio9.jpg 1x,
+                        ./images/desktop/portfolio/portfolio9@2x.jpg 2x,
+                        ./images/desktop/portfolio/portfolio9@2x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tablet/portfolio/portfolio9.jpg 1x, 
+                      ./images/tablet/portfolio/portfolio9@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mobile/portfolio/portfolio9.jpg 1x, 
+                      ./images/mobile/portfolio/portfolio9@2x.jpg 2x"
+                      media="(max-width: 767.98px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mobile/portfolio/portfolio9.jpg"
+                      alt="Growing Business"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__content">
                       Технокряк это современная площадка распространения
@@ -313,97 +619,99 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a href="#home" class="logo logo--footer link"
-            ><span class="logo__word">Web</span>Studio</a
-          >
+        <div class="footer__small-container">
+          <div>
+            <a href="#home" class="logo logo--footer link"
+              ><span class="logo__word">Web</span>Studio</a
+            >
 
-          <address class="address">
-            <ul class="list">
-              <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/PmJtXKr7N3SHuHkD6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="address__link link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+            <address class="address">
+              <ul class="list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/PmJtXKr7N3SHuHkD6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="address__link link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="address__link address--contact link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    href="tel:+380991111111"
+                    class="address__link address--contact link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__socials-container">
+            <p class="footer__title">Присоединяйтесь</p>
+            <ul class="list socials">
+              <li class="socials__item">
+                <a class="link socials__link socials__link--dark-bg" href="">
+                  <svg
+                    class="socials__icon socials__icon--dark-bg"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons/icomoon/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="address__link address--contact link"
-                  >info@example.com</a
-                >
+              <li class="socials__item">
+                <a class="link socials__link socials__link--dark-bg" href="">
+                  <svg
+                    class="socials__icon socials__icon--dark-bg"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons/icomoon/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a
-                  href="tel:+380991111111"
-                  class="address__link address--contact link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="socials__item">
+                <a class="link socials__link socials__link--dark-bg" href="">
+                  <svg
+                    class="socials__icon socials__icon--dark-bg"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons/icomoon/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="link socials__link socials__link--dark-bg" href="">
+                  <svg
+                    class="socials__icon socials__icon--dark-bg"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons/icomoon/sprite.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__socials-container">
-          <p class="footer__title">Присоединяйтесь</p>
-          <ul class="list socials">
-            <li class="socials__item">
-              <a class="link socials__link socials__link--dark-bg" href="">
-                <svg
-                  class="socials__icon socials__icon--dark-bg"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons/icomoon/sprite.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="link socials__link socials__link--dark-bg" href="">
-                <svg
-                  class="socials__icon socials__icon--dark-bg"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons/icomoon/sprite.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="link socials__link socials__link--dark-bg" href="">
-                <svg
-                  class="socials__icon socials__icon--dark-bg"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons/icomoon/sprite.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="link socials__link socials__link--dark-bg" href="">
-                <svg
-                  class="socials__icon socials__icon--dark-bg"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons/icomoon/sprite.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__signup-container">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -438,6 +746,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
